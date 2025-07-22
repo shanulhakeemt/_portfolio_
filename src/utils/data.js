@@ -24,7 +24,6 @@ import PROJECT_IMG_3 from "../assets/images/project-3.png";
 import PROJECT_IMG_4 from "../assets/images/project-4.png";
 import PROJECT_IMG_5 from "../assets/images/project-5.png";
 import PROJECT_IMG_6 from "../assets/images/project-6.png";
-import PROJECT_IMG_7 from "../assets/images/project-7.png";
 
 export const SKILLS_CATEGORY = [
   {
