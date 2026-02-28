@@ -2,7 +2,8 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { ArrowDown, Mail } from "lucide-react";
 import { FiGithub, FiLinkedin } from "react-icons/fi";
 import { useTheme } from "../../context/ThemeContext";
-import PROFILE_PIC from "../../assets/Images/profile1.jpeg";
+import PROFILE_PIC from "../../assets/Images/profile1.png";
+import { containerVariants, itemVariants } from "../../utils/helper";
 
 function HeroSection() {
   const { isDarkMode } = useTheme();
@@ -15,25 +16,6 @@ function HeroSection() {
     }
   };
 
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.2,
-        delayChildren: 0.3,
-      },
-    },
-  };
-
-  const itemVariants = {
-    hidden: { y: 30, opacity: 0 },
-    visible: {
-      y: 0,
-      opacity: 1,
-      transition: { duration: 0.8, ease: "easeOut" },
-    },
-  };
   const textVariants = {
     hidden: { opacity: 0, y: 20 },
     visible: {
